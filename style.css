@@ -1,0 +1,178 @@
+* {
+  /* box-sizing: border-box; */
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  border-top: 10px ;
+  background-color: #111111;
+}
+
+#grid {
+  display: grid;
+  /* grid-template-rows: 100px auto; */
+  grid-template-rows: 70px 2fr 1fr 100px;
+  gap: 30px 0;
+  height: 100vh;
+}
+
+#topo {
+  display: flex;
+}
+
+#topo .logo {
+  width: 93px;
+  height: 25px;
+  padding: 20px 50px;
+}
+
+#principal h1 {
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 48px;
+
+  padding: 30px 0;
+  text-align: center;
+}
+
+#principal #perfis {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#principal #perfis .perfil {
+  justify-content: center;
+  text-align: center;
+}
+
+#principal #perfis .perfil img {
+  position: relative;
+  width: 137px;
+  height: 137;
+  border-radius: 5px;
+  margin: 0px 15px;
+}
+
+#principal #perfis .perfil img:hover {
+  width: 134px;
+  height: 134px;
+  border: 3px solid white;
+  /* transition: all 150ms ease; */
+  cursor: pointer;
+}
+#principal #perfis .perfil img:hover + p {
+  color: white;
+}
+
+#principal #perfis .perfil p {
+  font-size: 18px;
+  font-weight: 400;
+  color: gray;
+  text-align: center;
+}
+#principal #perfis .perfil p:hover {
+  color: #e5e5e5;
+  cursor: pointer;
+  transition: all 100ms ease;
+}
+
+.profile-button {
+  display: block;
+  margin: 2em em 0 1em 0;
+  font-size: 1.2vw;
+  border: 1px solid grey;
+  color: grey;
+  padding: 0.5em 1.5em;
+  letter-spacing: 2px;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+#fim #botao {
+  position: fixed;
+  bottom: 120px;
+  left: 580px;
+  display: block;
+  margin: auto;
+  width: 150px;
+  padding: 8px 24px;
+  letter-spacing: 2px;
+  background-color: transparent;
+  text-decoration: none;
+  border: 1px solid gray;
+  color: gray;
+  margin-top: 80px;
+}
+
+#fim #botao:hover {
+  color: white;
+  border-color: white;
+  transition: all 50ms ease;
+}
+
+#footer p {
+  color: transparent;
+  text-align: center;
+
+}
+
+@media screen and (max-width: 210px) {
+  #fim #botao {
+    color: transparent;
+    background-color: transparent;
+  }
+  #principal #perfis .perfil {
+    margin-bottom: 20px;
+  }
+  #principal #perfis .perfil p{
+    margin-top: 5px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+
+  .logo {
+    width: 45px;
+    height: 12px;
+    padding: 20px 50px;
+  }
+
+  #fim #botao {
+    position: inherit;
+  }
+  #principal #perfis .perfil {
+    margin-bottom: 20px;
+  }
+  #principal #perfis .perfil p{
+    margin-top: 5px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .logo {
+    width: 45px;
+    height: 12px;
+    padding: 20px 50px;
+  }
+
+  #fim #botao {
+    position: inherit;
+  }
+  #footer p {
+    color: transparent;
+    text-align: center;
+    padding: 80px 0;
+  }
+  
+}
+
+@media screen and (min-width: 768px) {
+  #fim #botao {
+    position: inherit;
+  }
+}
+
