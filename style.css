@@ -6,7 +6,7 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  border-top: 10px ;
+  border-top: 10px;
   background-color: #111111;
 }
 
@@ -54,13 +54,11 @@ body {
   height: 137;
   border-radius: 5px;
   margin: 0px 15px;
+  border: 3px solid rgba(0, 0, 0, 0);
 }
 
 #principal #perfis .perfil img:hover {
-  width: 134px;
-  height: 134px;
   border: 3px solid white;
-  /* transition: all 150ms ease; */
   cursor: pointer;
 }
 #principal #perfis .perfil img:hover + p {
@@ -116,7 +114,6 @@ body {
 #footer p {
   color: transparent;
   text-align: center;
-
 }
 
 @media screen and (max-width: 210px) {
@@ -127,13 +124,12 @@ body {
   #principal #perfis .perfil {
     margin-bottom: 20px;
   }
-  #principal #perfis .perfil p{
+  #principal #perfis .perfil p {
     margin-top: 5px;
   }
 }
 
 @media screen and (max-width: 480px) {
-
   .logo {
     width: 45px;
     height: 12px;
@@ -146,13 +142,12 @@ body {
   #principal #perfis .perfil {
     margin-bottom: 20px;
   }
-  #principal #perfis .perfil p{
+  #principal #perfis .perfil p {
     margin-top: 5px;
   }
 }
 
 @media screen and (max-width: 768px) {
-
   .logo {
     width: 45px;
     height: 12px;
@@ -167,7 +162,6 @@ body {
     text-align: center;
     padding: 80px 0;
   }
-  
 }
 
 @media screen and (min-width: 768px) {
@@ -175,4 +169,3 @@ body {
     position: inherit;
   }
 }
-
